@@ -5,8 +5,8 @@
 ```shell
 └── source/
     └── favicons/
-        ├── 180.png   # для старых iPhone
-        ├── 192.png
-        ├── 512.png
+        ├── 180.webp   # для старых iPhone
+        ├── 192.webp
+        ├── 512.webp
         └── icon.svg
 ```

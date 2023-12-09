@@ -27,7 +27,7 @@ const PATHS_TO_STATIC = [
   `${PATH_TO_SOURCE}fonts/**/*.{woff2,woff}`,
   `${PATH_TO_SOURCE}*.ico`,
   `${PATH_TO_SOURCE}*.webmanifest`,
-  `${PATH_TO_SOURCE}favicons/*.{png,svg}`,
+  `${PATH_TO_SOURCE}favicons/*.{.webp,svg}`,
   `${PATH_TO_SOURCE}vendor/**/*`,
   `${PATH_TO_SOURCE}images/**/*`,
   `!${PATH_TO_SOURCE}images/icons/**/*`,
@@ -80,7 +80,7 @@ export function processScripts () {
 
 export function optimizeRaster () {
   const RAW_DENSITY = 2;
-  const TARGET_FORMATS = [undefined, 'webp']; // undefined — initial format: jpg or png
+  const TARGET_FORMATS = [undefined, 'webp']; // undefined — initial format: jpg or .webp
 
   function createOptionsFormat() {
     const formats = [];
@@ -101,7 +101,7 @@ export function optimizeRaster () {
     return { formats };
   }
 
-  return src(`${PATH_TO_RAW}images/**/*.{png,jpg,jpeg}`)
+  return src(`${PATH_TO_RAW}images/**/*.{.webp,jpg,jpeg}`)
     .pipe(sharp(createOptionsFormat()))
     .pipe(dest(`${PATH_TO_SOURCE}images`));
 }

@@ -4,6 +4,6 @@ build
 .DS_Store
 raw/**/*.jpg
 raw/**/*.jpeg
-raw/**/*.png
+raw/**/*.webp
 raw/**/*.svg
 !raw/**/README.md

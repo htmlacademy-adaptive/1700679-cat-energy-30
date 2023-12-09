@@ -18,7 +18,7 @@
   git version 2.42.0.windows.1
   ```
 
-  ![проверка версии git](assets/git.png)
+  ![проверка версии git](assets/git.webp)
 
   версия не важна. Главное, что git отреагировал и написал ответ
 
@@ -34,7 +34,7 @@
   v18.18.0
   ```
 
-  ![проверка версии node.js](assets/node.png)
+  ![проверка версии node.js](assets/node.webp)
 
   важно, чтобы была действующая LTS версия (первое число — чётное), то есть не ниже 20.9 или не ниже 18.18.
 
@@ -219,23 +219,23 @@
         │   └── stack.svg         # спрайт
         ├── bg.jpg
         ├── bg.webp
-        ├── hero.png
+        ├── hero.webp
         ├── hero.webp
         └── logo.svg
 ```
 
 ### Фавиконки
 
-Варианты фавиконок форматов PNG и SVG следует размещать в `source/favicons/`.
+Варианты фавиконок форматов .webp и SVG следует размещать в `source/favicons/`.
 
 Файлы `favicon.ico` и `manifest.webmanifest` — в `source/`:
 
 ```shell
 └── source/
     ├── favicons/
-    │   ├── 180.png
-    │   ├── 192.png
-    │   ├── 512.png
+    │   ├── 180.webp
+    │   ├── 192.webp
+    │   ├── 512.webp
     │   └── icon.svg
     ├── favicon.ico
     └── manifest.webmanifest
