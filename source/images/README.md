@@ -5,7 +5,7 @@
     └── images/
         ├── bg.jpg
         ├── bg.webp
-        ├── hero.png
+        ├── hero.webp
         ├── hero.webp
         └── logo.svg
 ```
@@ -17,7 +17,7 @@
     └── images/
         ├── bg.jpg
         ├── bg.webp
-        ├── hero.png
+        ├── hero.webp
         ├── hero.webp
         └── logo.svg
 ```
