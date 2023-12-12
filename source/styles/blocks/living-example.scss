@@ -1,0 +1,34 @@
+.living-example {
+  .living-example__title {
+    font-size: 36px;
+    line-height: 40px;
+    text-align: center;
+  }
+
+  .living-example__descriptio {
+    font-family: $second;
+    font-size: 14px;
+    line-height: 18px;
+    color: $special_dark-grey;
+  }
+
+  .benefit__title {
+    text-align: center;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .benefit__caption {
+    text-align: center;
+    font-family: $second;
+    font-size: 12px;
+    line-height: 100%;
+  }
+
+  .living-example__result-title {
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+}
