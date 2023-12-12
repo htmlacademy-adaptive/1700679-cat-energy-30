@@ -1,0 +1,82 @@
+.form {
+  &__title {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  &__label {
+    color: $special_dark-grey;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+
+  &__cat-settings {
+    color: $special_dark-grey;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+
+  &__cat-settings::placeholder{
+    font-family: $primary-font;
+    color: $special_dark-grey;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    opacity: 1;
+  }
+
+  &__feedback-input{
+    color: $special_dark-grey;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+
+  &__feedback-input::placeholder{
+    font-family: $primary-font;
+    color: $special_dark-grey;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    opacity: 1;
+  }
+
+  &__coment-input {
+    color: $special_dark-grey;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+
+  &__coment-input::placeholder {
+    font-family: $primary-font;
+    color: $special_dark-grey;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    opacity: 1;
+  }
+
+  &__submit {
+    font-family: $primary-font;
+    color: $white;
+    background-color: $basic_green;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  &__legend {
+    font-family: $second-font;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+}

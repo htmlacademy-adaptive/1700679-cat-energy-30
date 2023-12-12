@@ -1,5 +1,5 @@
 $primary-font: "Oswald", sans-serif;
-$second: "Oswald", sans-serif;
+$second-font: "Lato", sans-serif;
 
-@include font-face("Oswald", 400, normal, url("../../fonts/oswaldmedium.woff2") format("woff2"));
-@include font-face("Oswald", 700, normal, url("../../fonts/oswaldregular.woff2") format("woff2"));
+@include font-face("Oswald", 400, normal, url("../../fonts/oswald/oswaldregular.woff2") format("woff2"));
+@include font-face("Lato", 400, normal, url("../../fonts/lato/Lato-Regular.woff2") format("woff2"))

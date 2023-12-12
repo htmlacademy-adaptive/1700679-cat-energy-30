@@ -1,9 +1,16 @@
 .how-it-works {
-  .how-it-works__title {
+  &__title {
     font-size: 24px;
     line-height: 40px;
     font-weight: 400;
     text-align: center;
     text-transform: uppercase;
+  }
+
+  &__point {
+    font-family: $second-font;
+    color: $special_dark-grey;
+    font-size: 14px;
+    line-height: 18px;
   }
 }

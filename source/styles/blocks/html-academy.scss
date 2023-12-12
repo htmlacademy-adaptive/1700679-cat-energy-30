@@ -1,6 +1,9 @@
 .html-academy {
-  color: $special_dark-grey;
-  font-family: $second;
-  font-size: 16px;
-  line-height: 20px;
+  &__link {
+    color: $special_dark-grey;
+    font-family: $second-font;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+  }
 }

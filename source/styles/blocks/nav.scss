@@ -2,7 +2,8 @@
   color: $black;
   text-decoration: none;
 
-  .nav__link {
+  &__link {
+    font-family: $primary-font;
     color: $black;
     text-decoration: none;
   }

@@ -1,0 +1,45 @@
+.auxiliary-products {
+  &__title {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  &__name {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__count {
+    font-family: $second-font;
+    color: $special_dark-grey;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__value {
+    font-family: $primary-font;
+    color: $special_dark-grey;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__sale {
+    font-family: $second-font;
+    color: $white;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    text-align: center;
+  }
+}

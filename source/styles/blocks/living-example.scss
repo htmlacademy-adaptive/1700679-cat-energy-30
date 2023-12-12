@@ -3,10 +3,11 @@
     font-size: 36px;
     line-height: 40px;
     text-align: center;
+    font-weight: 400;
   }
 
   .living-example__description {
-    font-family: $second;
+    font-family: $second-font;
     font-size: 14px;
     line-height: 18px;
     color: $special_dark-grey;
@@ -14,13 +15,14 @@
 
   .benefit__title {
     text-align: center;
+    font-weight: 400;
     font-size: 24px;
     line-height: 24px;
   }
 
   .benefit__caption {
     text-align: center;
-    font-family: $second;
+    font-family: $second-font;
     font-size: 12px;
     line-height: 100%;
   }
