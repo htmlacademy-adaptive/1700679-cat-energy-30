@@ -1,4 +1,5 @@
 $primary-font: "Oswald", sans-serif;
+$second: "Oswald", sans-serif;
 
 @include font-face("Oswald", 400, normal, url("../../fonts/oswaldmedium.woff2") format("woff2"));
 @include font-face("Oswald", 700, normal, url("../../fonts/oswaldregular.woff2") format("woff2"));
