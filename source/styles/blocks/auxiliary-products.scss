@@ -1,12 +1,12 @@
 .auxiliary-products {
-  &__title {
+  .auxiliary-products__title {
     font-size: 24px;
     line-height: 24px;
     font-weight: 400;
     text-align: center;
   }
 
-  &__name {
+  .auxiliary-products__name {
     font-size: 16px;
     line-height: 16px;
     font-weight: 400;
@@ -14,7 +14,7 @@
     text-align: center;
   }
 
-  &__count {
+  .auxiliary-products__count {
     font-family: $second-font;
     color: $special_dark-grey;
     font-size: 14px;
@@ -24,7 +24,7 @@
     text-transform: uppercase;
   }
 
-  &__value {
+  .auxiliary-products__value {
     font-family: $primary-font;
     color: $special_dark-grey;
     font-size: 14px;
@@ -34,7 +34,7 @@
     text-transform: uppercase;
   }
 
-  &__sale {
+  .auxiliary-products__sale {
     font-family: $second-font;
     color: $white;
     font-size: 16px;

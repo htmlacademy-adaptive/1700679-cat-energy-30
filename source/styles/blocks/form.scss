@@ -1,26 +1,26 @@
 .form {
-  &__title {
+  .form__title {
     font-size: 14px;
     line-height: 18px;
     font-weight: 400;
     text-transform: uppercase;
   }
 
-  &__label {
+  .form__label {
     color: $special_dark-grey;
     font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
   }
 
-  &__cat-settings {
+  .form__cat-settings {
     color: $special_dark-grey;
     font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
   }
 
-  &__cat-settings::placeholder{
+  .form__cat-settings::placeholder{
     font-family: $primary-font;
     color: $special_dark-grey;
     font-size: 16px;
@@ -29,14 +29,14 @@
     opacity: 1;
   }
 
-  &__feedback-input{
+  .form__feedback-input{
     color: $special_dark-grey;
     font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
   }
 
-  &__feedback-input::placeholder{
+  .form__feedback-input::placeholder{
     font-family: $primary-font;
     color: $special_dark-grey;
     font-size: 16px;
@@ -45,14 +45,14 @@
     opacity: 1;
   }
 
-  &__coment-input {
+  .form__coment-input {
     color: $special_dark-grey;
     font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
   }
 
-  &__coment-input::placeholder {
+  .form__coment-input::placeholder {
     font-family: $primary-font;
     color: $special_dark-grey;
     font-size: 16px;
@@ -61,7 +61,7 @@
     opacity: 1;
   }
 
-  &__submit {
+  .form__submit {
     font-family: $primary-font;
     color: $white;
     background-color: $basic_green;
@@ -72,7 +72,7 @@
     text-decoration: none;
   }
 
-  &__legend {
+  .form__legend {
     font-family: $second-font;
     font-size: 16px;
     line-height: 20px;

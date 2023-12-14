@@ -6,9 +6,9 @@
 @import "./global/visually-hidden.scss";
 @import "./global/common.scss";
 /* BLOCKS */
-@import "blocks/header.scss";
+@import "blocks/main-header.scss";
 @import "blocks/nav.scss";
-@import "blocks/footer.scss";
+@import "blocks/main-footer";
 @import "blocks/promo.scss";
 @import "blocks/programms.scss";
 @import "blocks/how-it-works.scss";
@@ -18,3 +18,4 @@
 @import "blocks/product-card.scss";
 @import "blocks/auxiliary-products.scss";
 @import "blocks/form.scss";
+@import "blocks/burger.scss";

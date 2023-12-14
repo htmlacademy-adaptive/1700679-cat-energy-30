@@ -1,5 +1,5 @@
 .promo {
-  &__title {
+  .promo__title {
     color: $white;
     font-weight: 400;
     text-align: center;
@@ -7,7 +7,7 @@
     line-height: 36px;
   }
 
-  &__subtitle {
+  .promo__subtitle {
     color: $white;
     text-align: center;
     font-size: 14px;
@@ -15,7 +15,7 @@
     text-transform: uppercase;
   }
 
-  &__find-program {
+  .promo__find-program {
     background-color: $basic_green;
     color: $white;
     font-family: $primary-font;

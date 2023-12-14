@@ -1,5 +1,5 @@
 .product-card {
-  &__name {
+  .proudct-card__name {
     font-size: 36px;
     line-height: 36px;
     font-weight: 400;
@@ -14,7 +14,7 @@
     text-align: center;
   }
 
-  &__add-to-cart {
+  .product-card__add-to-cart {
     background-color: $basic_green;
     color: $white;
     font-family: $primary-font;
