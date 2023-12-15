@@ -1,4 +1,4 @@
-.burger{
+.burger {
   background-color: $white;
   border: none;
   position: relative;
@@ -20,9 +20,9 @@
 
 .burger__line::before,
 .burger__line::after {
-  content: '';
+  content: "";
   position: absolute;
-  background-color:  $black;
+  background-color: $black;
   transition: 0.5s;
   width: 24px;
   height: 2px;
@@ -37,7 +37,7 @@
   top: 8px;
 }
 
-.burger--active{
+.burger--active {
   .burger__line {
     background-color: transparent;
     transition: 0.1s;
