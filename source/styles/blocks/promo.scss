@@ -1,11 +1,10 @@
 .promo {
   position: relative;
-  background-image:
-        url('../../images/cat-background-mobile@2x.webp');
+  background-image: url("../../images/cat-background-mobile@2x.webp");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  background-color: rgb(104, 161,52);
+  background-color: rgb(104, 161, 52);
   background-blend-mode: multiply;
 }
 
@@ -24,4 +23,3 @@
   line-height: 14px;
   text-transform: uppercase;
 }
-

@@ -1,4 +1,4 @@
-.button{
+.button {
   display: inline-block;
   font-family: $primary-font;
   font-weight: 400;
@@ -10,13 +10,12 @@
   cursor: pointer;
 }
 
-.button--primary{
+.button--primary {
   background-color: $basic_green;
   color: $white;
 }
 
-.button--secondary{
+.button--secondary {
   background-color: $basic_grey;
   color: $special_dark-grey;
 }
-
