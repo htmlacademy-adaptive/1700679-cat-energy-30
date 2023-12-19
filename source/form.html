@@ -23,7 +23,6 @@
           <source media="(min-width: 768px)" srcset="images/icons/logo-text-tablet.svg" width="101" height="18" type="image/svg+xml">
           <img class="logo__text" alt="Кэт энерджи" src="images/icons/logo-text-mobile.svg" width="101" height="18">
         </picture>
-        <span class="visually-hidden">Cat energy</span>
       </a>
       <nav class="main-header__nav nav">
         <ul class="nav__list">
@@ -40,16 +39,14 @@
       </nav>
       <button class="main-header__burger burger" type="button">
         <span class="burger_line"></span>
-        <span class="burger_line"></span>
-        <span class="burger_line"></span>
         <span class="visually-hidden">Открыть меню</span>
       </button>
     </header>
     <main class="main-container">
       <h1 class="main-container__title">Подбор программы</h1>
         <form class="main-container__form form" action="https://echo.htmlacademy.ru/" method="get" data-test="filter">
+          <p class="form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
           <fieldset class="form__fieldset">
-            <legend class="form__title">Заполните анкету, и мы подберем программу питания для вашего кота</legend>
             <ul class="form__list">
               <li class="form__item">
                 <label class="form__label" for="name">Имя:*</label>
@@ -97,10 +94,11 @@
           </fieldset>
           <fieldset class="form__fieldset">
             <legend class="form__title">Комментарий</legend>
-            <textarea class="form__coment-input" name="form" id="form" cols="30" rows="5" placeholder="Расскажите обо всех повaдках кота"></textarea>
+            <label class="visually-hidden" for="form">Дайте больще информации о домашнем животном</label>
+            <textarea class="form__comment-input" name="form" id="form" cols="30" rows="5" placeholder="Расскажите обо всех повaдках кота"></textarea>
           </fieldset>
           <fieldset class="form__fieldset">
-            <legend class="visually-hidden">Дополнительные товары</legend>
+            <legend class="form__title">Дополнительно</legend>
             <ul class="form__list">
               <li class="form__item">
                 <label class="form__label" for="sweetener">Сахарозаменитель</label>
@@ -120,7 +118,7 @@
               </li>
             </ul>
           </fieldset>
-          <button class="form__submit" type="submit">Отправить заявку</button>
+          <button class="form__submit button button--primary" type="submit">Отправить заявку</button>
           <p class="form__legend">* — Обязательные поля</p>
         </form>
     </main>

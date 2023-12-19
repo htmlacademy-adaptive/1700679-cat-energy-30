@@ -1,82 +1,86 @@
-.form {
-  .form__title {
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: 400;
-    text-transform: uppercase;
-  }
+.form__description {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
 
-  .form__label {
-    color: $special_dark-grey;
-    font-size: 16px;
-    line-height: 18px;
-    text-transform: uppercase;
-  }
+.form__title {
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
 
-  .form__cat-settings {
-    color: $special_dark-grey;
-    font-size: 16px;
-    line-height: 18px;
-    text-transform: uppercase;
-  }
+.form__label {
+  color: $special_dark-grey;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
 
-  .form__cat-settings::placeholder {
-    font-family: $primary-font;
-    color: $special_dark-grey;
-    font-size: 16px;
-    line-height: 18px;
-    text-transform: uppercase;
-    opacity: 1;
-  }
+.form__cat-settings {
+  color: $special_dark-grey;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
 
-  .form__feedback-input {
-    color: $special_dark-grey;
-    font-size: 16px;
-    line-height: 18px;
-    text-transform: uppercase;
-  }
+.form__cat-settings::placeholder {
+  font-family: $primary-font;
+  color: $special_dark-grey;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  opacity: 1;
+}
 
-  .form__feedback-input::placeholder {
-    font-family: $primary-font;
-    color: $special_dark-grey;
-    font-size: 16px;
-    line-height: 18px;
-    text-transform: uppercase;
-    opacity: 1;
-  }
+.form__feedback-input {
+  color: $special_dark-grey;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
 
-  .form__coment-input {
-    color: $special_dark-grey;
-    font-size: 16px;
-    line-height: 18px;
-    text-transform: uppercase;
-  }
+.form__feedback-input::placeholder {
+  font-family: $primary-font;
+  color: $special_dark-grey;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  opacity: 1;
+}
 
-  .form__coment-input::placeholder {
-    font-family: $primary-font;
-    color: $special_dark-grey;
-    font-size: 16px;
-    line-height: 18px;
-    text-transform: uppercase;
-    opacity: 1;
-  }
+.form__comment-input {
+  color: $special_dark-grey;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
 
-  .form__submit {
-    font-family: $primary-font;
-    color: $white;
-    background-color: $basic_green;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-  }
+.form__comment-input::placeholder {
+  font-family: $primary-font;
+  color: $special_dark-grey;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  opacity: 1;
+}
 
-  .form__legend {
-    font-family: $second-font;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 400;
-    text-transform: uppercase;
-  }
+.form__submit {
+  font-family: $primary-font;
+  color: $white;
+  background-color: $basic_green;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.form__legend {
+  font-family: $second-font;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
 }

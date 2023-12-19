@@ -1,39 +1,28 @@
-.product-card {
-  .proudct-card__name {
-    font-size: 36px;
-    line-height: 36px;
-    font-weight: 400;
-  }
+.product-card__name {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+}
 
-  .settings-item {
-    font-family: $second-font;
-    color: $special_dark-grey;
-    font-size: 12px;
-    line-height: 16px;
-    font-weight: 400;
-    text-align: center;
-  }
-
-  .product-card__add-to-cart {
-    background-color: $basic_green;
-    color: $white;
-    font-family: $primary-font;
-    font-size: 16px;
-    line-height: 20px;
-    text-transform: uppercase;
-    font-weight: 400;
-    text-align: center;
-  }
+.product-card__add-to-cart {
+  background-color: $basic_green;
+  color: $white;
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
 }
 
 .products__item--show-more {
   .products__item-title {
+    color: $black_gray;
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
     text-align: center;
   }
-
   .products__item-caption {
     color: $special_dark-grey;
     text-align: center;

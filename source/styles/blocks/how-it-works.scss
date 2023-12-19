@@ -1,15 +1,13 @@
-.how-it-works {
-  .how-it-works__title {
-    font-size: 24px;
-    line-height: 40px;
-    font-weight: 400;
-    text-transform: uppercase;
-  }
+.how-it-works__title {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
 
-  .how-it-works__point {
-    font-family: $second-font;
-    color: $special_dark-grey;
-    font-size: 14px;
-    line-height: 18px;
-  }
+.how-it-works__point {
+  font-family: $second-font;
+  color: $special_dark-grey;
+  font-size: 14px;
+  line-height: 18px;
 }

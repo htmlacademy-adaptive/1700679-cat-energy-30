@@ -1,0 +1,22 @@
+.button{
+  display: inline-block;
+  font-family: $primary-font;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button--primary{
+  background-color: $basic_green;
+  color: $white;
+}
+
+.button--secondary{
+  background-color: $basic_grey;
+  color: $special_dark-grey;
+}
+
