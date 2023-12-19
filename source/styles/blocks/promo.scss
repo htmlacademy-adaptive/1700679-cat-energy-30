@@ -1,0 +1,25 @@
+.promo {
+  position: relative;
+  background-image: url("../../images/cat-background-mobile@2x.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: rgb(104, 161, 52);
+  background-blend-mode: multiply;
+}
+
+.promo__title {
+  color: $white;
+  font-weight: 400;
+  text-align: center;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.promo__subtitle {
+  color: $white;
+  text-align: center;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
