@@ -4,4 +4,17 @@
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
+
+  &::after {
+    width: 27px;
+    height: 34px;
+    content: "";
+    display: block;
+    mask-image: url("../../images/icons/stack.svg#html-academy");
+    mask-size: 27px 34px;
+    mask-position: right;
+    background-color: $medium_dark-grey;
+  }
 }
+
+

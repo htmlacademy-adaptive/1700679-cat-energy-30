@@ -15,8 +15,13 @@
   text-align: center;
 }
 
-.products__item--show-more {
-  .products__item-title {
+.product-card--show-more {
+  background-image: url("../../images/icons/stack.svg#plus-mobile");
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  background-position: 50% 45px;
+
+  .product-card__title {
     color: $black_gray;
     font-size: 16px;
     line-height: 20px;
@@ -24,7 +29,7 @@
     text-align: center;
   }
 
-  .products__item-caption {
+  .product-card__caption {
     color: $special_dark-grey;
     text-align: center;
     font-family: $second-font;
@@ -32,7 +37,7 @@
     line-height: 16px;
   }
 
-  .products__item-show {
+  .product-card__show-button {
     color: $special_dark-grey;
     background-color: $basic_grey;
     text-align: center;

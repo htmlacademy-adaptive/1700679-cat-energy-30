@@ -1,0 +1,21 @@
+.social__item-link {
+  display: block;
+  width: 28px;
+  height: 22px;
+  background-color: $medium_dark-grey;
+  mask-size: 28px 22px;
+  mask-position: center;
+  mask-repeat: no-repeat;
+
+  &--vk {
+    mask-image: url("../../images/icons/stack.svg#vkontakte");
+  }
+
+  &--youtube {
+    mask-image: url("../../images/icons/stack.svg#youtube");
+  }
+
+  &--telegram {
+    mask-image: url("../../images/icons/stack.svg#telegram");
+  }
+}
