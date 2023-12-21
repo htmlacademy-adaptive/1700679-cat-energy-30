@@ -13,9 +13,24 @@
 .button--primary {
   background-color: $basic_green;
   color: $white;
+
+  &:hover {
+    background-color: $basic_dark-green;
+  }
+
+  &:active {
+    background-color: $basic_dark-green;
+    color: rgba(225, 225, 225, 0.3);
+  }
 }
 
 .button--secondary {
   background-color: $basic_grey;
   color: $special_dark-grey;
+
+  &:hover {
+    background-color: $basic_dark-grey;
+  }
+
+
 }
