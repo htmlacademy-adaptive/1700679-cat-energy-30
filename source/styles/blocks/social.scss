@@ -18,4 +18,13 @@
   &--telegram {
     mask-image: url("../../images/icons/stack.svg#telegram");
   }
+
+  &:hover {
+    background-color: $basic_green;
+  }
+
+  &:active {
+    background-color: $basic_green;
+    opacity: 0.3;
+  }
 }

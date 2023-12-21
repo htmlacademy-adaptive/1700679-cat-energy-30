@@ -7,4 +7,12 @@
   mask-repeat: no-repeat;
   mask-image: url("../../images/icons/stack.svg#footer-logo-mobile");
   background-color: $special_dark-grey;
+
+  &:hover {
+    background-color: $dark-grey;
+  }
+
+  &:active {
+    background-color: $light-grey;
+  }
 }

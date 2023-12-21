@@ -7,17 +7,20 @@
 
 .slider__wrapper {
   display: block;
-  min-height: 300px;
   max-width: 280px;
   position: relative;
+}
+
+.slider__wrapper-img {
   &--before {
-    position: absolute;
-    top: 0;
-    left: 0;
+    display: block;
+    position: relative;
   }
 
-  &-after {
-    position: relative;
+  &--after {
+    top: 0;
+    display: block;
+    position: absolute;
   }
 }
 
@@ -27,7 +30,7 @@
   border: none;
   padding: 0;
   border-radius: 2px;
-  background-color: #444444;
+  background-color: $medium_dark-grey;
   position: absolute;
   top: 0;
   left: 50%;
@@ -46,15 +49,32 @@
   &::before {
     width: 40px;
     height: 40px;
-    border: 2px solid #444444;
+    border: 2px solid $medium_dark-grey;
     border-radius: 50%;
-    background: $white;
+    background-color: $white;
   }
 
   &::after {
     width: 40px;
     height: 40px;
     mask-image: url("../../images/icons/stack.svg#thumb-arrows");
-    background-color: #444444;
+    background-color: $medium_dark-grey;
+  }
+
+  &:hover {
+    background-color: $basic_green;
+
+    &::after {
+      background-color: $basic_green;
+    }
+  }
+
+  &:active {
+    background-color: $basic_dark-green;
+    opacity: 0.6;
+
+    &::after {
+      background-color: $basic_dark-green;
+    }
   }
 }
