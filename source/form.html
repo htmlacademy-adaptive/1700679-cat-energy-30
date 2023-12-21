@@ -10,6 +10,7 @@
     <script src="scripts/index.js" defer></script>
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="styles/global/variables.scss">
+    <link rel="stylesheet" href="styles/blocks/form.scss">
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -39,7 +40,7 @@
         </ul>
       </nav>
       <button class="main-header__burger burger" type="button">
-        <span class="burger_line"></span>
+        <span class="burger__line"></span>
         <span class="visually-hidden">Открыть меню</span>
       </button>
     </header>
@@ -86,11 +87,11 @@
             <ul class="form__list">
               <li class="form__item">
                 <label class="form__label" for="e-mail">E-mail:*</label>
-                <input class="form__feedback-input" type="email" id="e-mail" name="e-mail" placeholder="kuklachev@gmail.com" required>
+                <input class="form__feedback-input form__feedback-input--email" type="email" id="e-mail" name="e-mail" placeholder="kuklachev@gmail.com" required>
               </li>
               <li class="form__item">
                 <label class="form__label" for="phone">Телефон:*</label>
-                <input class="form__feedback-input" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
+                <input class="form__feedback-input form__feedback-input--phone" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
               </li>
             </ul>
           </fieldset>

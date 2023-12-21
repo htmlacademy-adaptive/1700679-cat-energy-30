@@ -23,6 +23,7 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  appearance: textfield;
 }
 
 .form__cat-settings::placeholder {
@@ -39,6 +40,18 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  mask-position: right;
+  mask-size: 20px 20px;
+  mask-repeat: no-repeat;
+  background-color: $black;
+
+  &--email {
+    mask-image: url("../../images/icons/stack.svg#e-mail");
+  }
+
+  &--phone {
+    mask-image: url("../../images/icons/stack.svg#phone");
+  }
 }
 
 .form__feedback-input::placeholder {
@@ -64,6 +77,34 @@
   line-height: 18px;
   text-transform: uppercase;
   opacity: 1;
+}
+
+.form__radio-input {
+  appearance: none;
+}
+
+.form__radio-input {
+  background-color: $white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: $very_light-grey 1px solid;
+
+  &:checked {
+    background-image: url("../../images/icons/stack.svg#radio-button-checked-mobile");
+  }
+}
+
+.form__checkbox {
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  background-color: $white;
+  border: $very_light-grey 1px solid;
+
+  &:checked {
+    background-image: url("../../images/icons/stack.svg#tick-mobile");
+  }
 }
 
 .form__submit {
