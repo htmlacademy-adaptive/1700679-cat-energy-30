@@ -48,12 +48,6 @@
   line-height: 18px;
   text-transform: uppercase;
   cursor: pointer;
-
-  &:focus-visible {
-    &::after {
-      background-color: $basic_green;
-    }
-  }
 }
 
 .form__feedback-wrapper {
