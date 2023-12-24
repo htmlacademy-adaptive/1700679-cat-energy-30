@@ -3,7 +3,6 @@
 @import "./global/global.scss";
 @import "./global/mixins";
 @import "./global/fonts.scss";
-@import "./global/visually-hidden.scss";
 /* BLOCKS */
 @import "./blocks/auxiliary-products.scss";
 @import "./blocks/benefits.scss";
@@ -14,11 +13,12 @@
 @import "./blocks/how-it-works.scss";
 @import "./blocks/html-academy.scss";
 @import "./blocks/living-example.scss";
-@import "./blocks/logo-text";
+@import "./blocks/logo.scss";
+@import "./blocks/logo-text.scss";
 @import "./blocks/main-container.scss";
 @import "./blocks/main-footer.scss";
 @import "./blocks/main-header.scss";
-@import "./blocks/nav.scss";
+@import "./blocks/main-nav.scss";
 @import "./blocks/programs-list";
 @import "./blocks/product-card.scss";
 @import "./blocks/promo.scss";

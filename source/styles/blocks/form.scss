@@ -79,6 +79,12 @@
       mask-image: url("../../images/icons/stack.svg#phone");
     }
   }
+
+  &:focus-within {
+    &::after {
+      background-color: $basic_green;
+    }
+  }
 }
 
 .form__feedback-wrapper-input::placeholder {

@@ -12,36 +12,39 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo-link logo" href="index.html" aria-current="page">
-        <picture>
-          <source media="(min-width: 1440px)" srcset="images/icons/logo-pic-desktop.svg" width="70" height="59" type="image/svg+xml">
-          <source media="(min-width: 768px)" srcset="images/icons/logo-pic-tablet.svg" width="60" height="50" type="image/svg+xml">
-          <img class="logo__image" alt="Логотип" src="images/icons/logo-pic-mobile.svg" width="33" height="38">
-        </picture>
-        <picture>
-          <source media="(min-width: 768px)" srcset="images/icons/logo-text-desktop.svg" width="118" height="21" type="image/svg+xml">
-          <source media="(min-width: 768px)" srcset="images/icons/logo-text-tablet.svg" width="101" height="18" type="image/svg+xml">
-          <img class="logo__text" alt="Кэт энерджи" src="images/icons/logo-text-mobile.svg" width="101" height="18">
-        </picture>
-        <span class="visually-hidden">Cat energy</span>
-      </a>
-      <nav class="main-header__nav nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a class="nav__link nav__link--current" href="index.html" aria-current="page">Главная</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="catalog.html">Каталог</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
-      <button class="main-header__burger burger" type="button">
-        <span class="burger__line"></span>
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
+      <div class="main-header__container container">
+        <a class="main-header__logo-link logo" href="index.html" aria-current="page">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="images/icons/logo-pic-desktop.svg" width="70" height="59" type="image/svg+xml">
+            <source media="(min-width: 768px)" srcset="images/icons/logo-pic-tablet.svg" width="60" height="50" type="image/svg+xml">
+            <img class="logo__image" alt="Логотип" src="images/icons/logo-pic-mobile.svg" width="33" height="38">
+          </picture>
+          <picture>
+            <source media="(min-width: 768px)" srcset="images/icons/logo-text-desktop.svg" width="118" height="21" type="image/svg+xml">
+            <source media="(min-width: 768px)" srcset="images/icons/logo-text-tablet.svg" width="101" height="18" type="image/svg+xml">
+            <img class="logo__text" alt="Кэт энерджи" src="images/icons/logo-text-mobile.svg" width="101" height="18">
+          </picture>
+          <span class="visually-hidden">Cat energy</span>
+        </a>
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <button class="main-nav__burger burger" type="button">
+            <span class="burger__line"></span>
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--current" href="index.html" aria-current="page">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Каталог</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="main-container">
       <section class="main-container__promo promo">
