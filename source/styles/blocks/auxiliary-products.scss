@@ -35,10 +35,18 @@
 }
 
 .auxiliary-products__sale {
+  display: block;
+  min-width: 200px;
+  min-height: 289px;
   font-family: $second-font;
   color: $white;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   text-align: center;
+  background-image: url("../../images/auxiliary-products/sale-background@1x.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $background_green;
+  background-blend-mode: multiply;
 }

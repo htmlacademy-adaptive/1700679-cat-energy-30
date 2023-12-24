@@ -10,4 +10,30 @@
   color: $special_dark-grey;
   font-size: 14px;
   line-height: 18px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: 60px 60px;
+    background-position: center;
+  }
+
+  &--natural::before {
+    background-image: url("../../images/icons/stack.svg#leaf");
+  }
+
+  &--fast-food::before {
+    background-image: url("../../images/icons/stack.svg#chemicals");
+  }
+
+  &--nutritious::before {
+    background-image: url("../../images/icons/stack.svg#food-appliances");
+  }
+
+  &--fast-result::before {
+    background-image: url("../../images/icons/stack.svg#clock");
+  }
 }
