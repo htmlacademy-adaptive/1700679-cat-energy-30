@@ -9,9 +9,12 @@
   text-align: center;
   cursor: pointer;
   border: none;
+  padding: 10px 20px;
+  transition: all .5s ease
 }
 
 .button--primary {
+  display: block;
   background-color: $basic_green;
   color: $white;
 

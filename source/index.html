@@ -19,19 +19,20 @@
             <source media="(min-width: 768px)" srcset="images/icons/logo-pic-tablet.svg" width="60" height="50" type="image/svg+xml">
             <img class="logo__image" alt="Логотип" src="images/icons/logo-pic-mobile.svg" width="33" height="38">
           </picture>
-          <picture>
-            <source media="(min-width: 768px)" srcset="images/icons/logo-text-desktop.svg" width="118" height="21" type="image/svg+xml">
-            <source media="(min-width: 768px)" srcset="images/icons/logo-text-tablet.svg" width="101" height="18" type="image/svg+xml">
-            <img class="logo__text" alt="Кэт энерджи" src="images/icons/logo-text-mobile.svg" width="101" height="18">
-          </picture>
+          <div class="logo__picture-wrapper">
+            <picture>
+              <source media="(min-width: 768px)" srcset="images/icons/logo-text-desktop.svg" width="118" height="21" type="image/svg+xml">
+              <source media="(min-width: 768px)" srcset="images/icons/logo-text-tablet.svg" width="101" height="18" type="image/svg+xml">
+              <img class="logo__text" alt="Кэт энерджи" src="images/icons/logo-text-mobile.svg" width="101" height="18">
+            </picture>
+          </div>
           <span class="visually-hidden">Cat energy</span>
         </a>
-        <nav class="main-nav main-nav--closed main-nav--nojs">
+        <nav class="main-nav main-nav--closed main-nav--nojs main-nav--opened">
           <button class="main-nav__burger burger" type="button">
             <span class="burger__line"></span>
             <span class="visually-hidden">Открыть меню</span>
           </button>
-
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a class="main-nav__link main-nav__link--current" href="index.html" aria-current="page">Главная</a>
@@ -48,17 +49,19 @@
     </header>
     <main class="main-container">
       <section class="main-container__promo promo">
-        <picture>
-          <source srcset="images/promo/promo-can-mobile@1x.webp 1x, images/promo/promo-can-mobile@2x.webp 2x" media="(max-width: 768px)" type="image/png" width="280" height="270">
-          <source srcset="images/promo/promo-can-desktop@1x.png 1x, images/promo/promo-can-desktop@2x.png 2x" media="(min-width: 1440px)" type="image/png">
-          <source srcset="images/promo/promo-can-tablet@1x.png 1x, images/promo/promo-can-tablet@2x.png 2x" media="(min-width: 768px)" type="image/png">
-          <source srcset="images/promo/promo-can-desktop@1x.webp 1x, images/promo/promo-can-desktop@2x.webp 2x" media="(min-width: 1440px)" type="image/webp">
-          <source srcset="images/promo/promo-can-tablet@1x.webp 1x, images/promo/promo-can-tablet@2x.webp 2x" media="(min-width: 768px)" type="image/webp">
-          <img class="promo__image" src="images/promo/promo-can-mobile@1x.png" srcset="images/promo/promo-can-mobile@2x.png 2x" width="280" height="270" alt="Вкусная курица">
-        </picture>
-        <h1 class="promo__title">Функциональное питание для котов</h1>
-        <p class="promo__subtitle">Занялся собой? Займись котом!</p>
-        <a class="promo__find-program button button--primary" href="catalog.html">Подобрать программу</a>
+        <div class="promo__container container">
+          <h1 class="promo__title">Функциональное питание для котов</h1>
+          <p class="promo__subtitle">Занялся собой? Займись котом!</p>
+          <picture>
+            <source srcset="images/promo/promo-can-mobile@1x.webp 1x, images/promo/promo-can-mobile@2x.webp 2x" media="(max-width: 768px)" type="image/png" width="280" height="270">
+            <source srcset="images/promo/promo-can-desktop@1x.png 1x, images/promo/promo-can-desktop@2x.png 2x" media="(min-width: 1440px)" type="image/png">
+            <source srcset="images/promo/promo-can-tablet@1x.png 1x, images/promo/promo-can-tablet@2x.png 2x" media="(min-width: 768px)" type="image/png">
+            <source srcset="images/promo/promo-can-desktop@1x.webp 1x, images/promo/promo-can-desktop@2x.webp 2x" media="(min-width: 1440px)" type="image/webp">
+            <source srcset="images/promo/promo-can-tablet@1x.webp 1x, images/promo/promo-can-tablet@2x.webp 2x" media="(min-width: 768px)" type="image/webp">
+            <img class="promo__image" src="images/promo/promo-can-mobile@1x.png" srcset="images/promo/promo-can-mobile@2x.png 2x" width="280" height="270" alt="Вкусная курица">
+          </picture>
+          <a class="promo__find-program button button--primary" href="catalog.html">Подобрать программу</a>
+        </div>
       </section>
         <ul class="main-container__programs programs-list">
           <li class="programs-item">

@@ -2,13 +2,17 @@
   color: $black;
   align-items: center;
   flex-wrap: wrap;
+  transition: all 0.6s ease;
 
   &--closed .main-nav__list {
     display: none;
+    animation: moveElement  0.6s ease;
   }
 
-  &--main-nav--nojs {
+  &--nojs .main-nav__list{
     display: block;
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -22,11 +26,14 @@
   top: 66px;
   left: 0;
   background-color: #fff;
-  z-index: 2;
+  z-index: 1;
+  animation: moveElement  0.6s ease;
 }
 
 .main-nav__item {
   min-width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .main-nav__link {
@@ -58,27 +65,45 @@
 }
 
 @media (min-width: $tablet-width) {
+    .main-nav {
+      &--closed .main-nav__list {
+        display: flex;
+      }
+    }
+
     .main-nav__list {
+      position: relative;
       gap: 33px;
       flex-direction: row;
+      top: 0;
+      background: none;
     }
 
-    .main-nav__link--current {
-      border-bottom: 2px solid $basic_green;
+    .main-nav__item {
+      max-width: 170px;
+      min-width: 100px;
     }
 
-    .main-nav__burger {
-      display: none;
+    .main-nav__link {
+      min-height: 24px;
+      padding: 14px 0 12px;
+      border: none;
+      &--current {
+        border-bottom: 2px solid $basic_green;
+      }
     }
 }
 
-@media (max-width: 767px) {
-  .logo {
-    flex: 1;
+@media (min-width: $desktop-width) {
+  .main-nav__item {
+    min-height: 59px;
   }
 
-  .burger {
-    display: block; /* Показываем бургер на мобильной версии */
+  .main-nav__link {
+    min-height: 0;
+    padding: 0 0 8px 0;
+    &--current {
+      border-bottom: 2px solid $white;
+    }
   }
-
 }
