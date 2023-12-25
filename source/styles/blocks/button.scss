@@ -13,8 +13,13 @@
   transition: all .5s ease
 }
 
+@media (max-width: $tablet-width) {
+  .button {
+    width: 100%;
+  }
+}
+
 .button--primary {
-  display: block;
   background-color: $basic_green;
   color: $white;
 

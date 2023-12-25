@@ -50,16 +50,18 @@
     <main class="main-container">
       <section class="main-container__promo promo">
         <div class="promo__container container">
-          <h1 class="promo__title">Функциональное питание для котов</h1>
+          <h1 class="promo__title">Функциональное<br> питание для котов</h1>
           <p class="promo__subtitle">Занялся собой? Займись котом!</p>
-          <picture>
-            <source srcset="images/promo/promo-can-mobile@1x.webp 1x, images/promo/promo-can-mobile@2x.webp 2x" media="(max-width: 767px)" type="image/png" width="280" height="270">
-            <source srcset="images/promo/promo-can-desktop@1x.png 1x, images/promo/promo-can-desktop@2x.png 2x" media="(min-width: 1440px)" type="image/png">
-            <source srcset="images/promo/promo-can-tablet@1x.png 1x, images/promo/promo-can-tablet@2x.png 2x" media="(min-width: 768px)" type="image/png">
-            <source srcset="images/promo/promo-can-desktop@1x.webp 1x, images/promo/promo-can-desktop@2x.webp 2x" media="(min-width: 1440px)" type="image/webp">
-            <source srcset="images/promo/promo-can-tablet@1x.webp 1x, images/promo/promo-can-tablet@2x.webp 2x" media="(min-width: 768px)" type="image/webp">
-            <img class="promo__image" src="images/promo/promo-can-mobile@1x.png" srcset="images/promo/promo-can-mobile@2x.png 2x" width="280" height="270" alt="Вкусная курица">
-          </picture>
+          <div class="promo__image-wrapper">
+            <picture>
+              <source srcset="images/promo/promo-can-mobile@1x.webp 1x, images/promo/promo-can-mobile@2x.webp 2x" media="(max-width: 768px)" type="image/png" width="280" height="270">
+              <source srcset="images/promo/promo-can-desktop@1x.png 1x, images/promo/promo-can-desktop@2x.png 2x" media="(min-width: 1440px)" type="image/png" width="552" height="499">
+              <source srcset="images/promo/promo-can-tablet@1x.png 1x, images/promo/promo-can-tablet@2x.png 2x" media="(min-width: 768px)" type="image/png" width="709" height="609">
+              <source srcset="images/promo/promo-can-desktop@1x.webp 1x, images/promo/promo-can-desktop@2x.webp 2x" media="(min-width: 1440px)" type="image/webp" width="552" height="499">
+              <source srcset="images/promo/promo-can-tablet@1x.webp 1x, images/promo/promo-can-tablet@2x.webp 2x" media="(min-width: 768px)" type="image/webp" width="709" height="609">
+              <img class="promo__image" src="images/promo/promo-can-mobile@1x.png" srcset="images/promo/promo-can-mobile@2x.png 2x" width="280" height="270" alt="Наш продукт вкусная курица">
+            </picture>
+          </div>
           <a class="promo__find-program button button--primary" href="catalog.html">Подобрать программу</a>
         </div>
       </section>
