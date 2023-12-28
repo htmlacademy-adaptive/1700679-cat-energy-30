@@ -52,7 +52,6 @@
         <div class="promo__container container">
           <h1 class="promo__title">Функциональное<br> питание для котов</h1>
           <p class="promo__subtitle">Занялся собой? Займись котом!</p>
-          <div class="promo__image-wrapper">
             <picture>
               <source srcset="images/promo/promo-can-mobile@1x.webp 1x, images/promo/promo-can-mobile@2x.webp 2x" media="(max-width: 768px)" type="image/png" width="280" height="270">
               <source srcset="images/promo/promo-can-desktop@1x.png 1x, images/promo/promo-can-desktop@2x.png 2x" media="(min-width: 1440px)" type="image/png" width="552" height="499">
@@ -61,22 +60,29 @@
               <source srcset="images/promo/promo-can-tablet@1x.webp 1x, images/promo/promo-can-tablet@2x.webp 2x" media="(min-width: 768px)" type="image/webp" width="709" height="609">
               <img class="promo__image" src="images/promo/promo-can-mobile@1x.png" srcset="images/promo/promo-can-mobile@2x.png 2x" width="280" height="270" alt="Наш продукт вкусная курица">
             </picture>
-          </div>
           <a class="promo__find-program button button--primary" href="catalog.html">Подобрать программу</a>
         </div>
       </section>
-        <ul class="main-container__programs programs-list">
-          <li class="programs-item">
-            <h2 class="programs-item__title programs-item__title--cat-slim">Похудение</h2>
-            <p class="programs-item__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a class="programs-item__link" href="catalog.html">каталог slim</a>
-          </li>
-          <li class="programs-item">
-            <h2 class="programs-item__title programs-item__title--cat-strong">Набор массы</h2>
-            <p class="programs-item__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a class="programs-item__link" href="catalog.html">каталог pro</a>
-          </li>
-        </ul>
+      <div class="programs">
+        <div class="programs__container container">
+          <ul class="programs__list">
+            <li class="programs__item programs__item--cat-slim">
+              <h2 class="programs-item__title">Похудение</h2>
+              <p class="programs-item__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+              <a class="programs-item__link" href="catalog.html">
+                <span class="programs-item__arrow">Каталог slim</span>
+              </a>
+            </li>
+            <li class="programs__item programs__item--cat-strong">
+              <h2 class="programs-item__title">Набор массы</h2>
+              <p class="programs-item__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+              <a class="programs-item__link" href="catalog.html">
+                <span class="programs-item__arrow">Каталог pro</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
         <section class="main-container__how-it-works how-it-works">
           <h2 class="how-it-works__title">Как это работает</h2>
           <ul class="how-it-works__points">

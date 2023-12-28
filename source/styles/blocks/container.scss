@@ -4,16 +4,17 @@
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
+  max-width: $mobile-width-only;
 
   @media (min-width: $tablet-width) {
     padding-left: 30px;
     padding-right: 30px;
-    max-width: 738px;
+    max-width: $tablet-width;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 106px;
     padding-right: 106px;
-    max-width: 1200px;
+    max-width: $desktop-width;
   }
 }
