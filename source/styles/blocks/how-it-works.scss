@@ -1,21 +1,51 @@
+.how-it-works__points {
+  @include list-reset;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) and  (max-width: $desktop-width - 1){
+    display: grid;
+    grid-template-columns: repeat(2, 247px);
+    gap: 37px 138px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    gap: 80px;
+  }
+}
+
 .how-it-works__title {
+  @include indent-reset;
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
-  text-transform: uppercase;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .how-it-works__point {
+  @include indent-reset;
+  position: relative;
   font-family: $second-font;
   color: $special_dark-grey;
   font-size: 14px;
   line-height: 18px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: all 0.6s ease;
 
   &::before {
     content: "";
     display: block;
-    width: 60px;
-    height: 60px;
+    min-width: 60px;
+    min-height: 60px;
     background-repeat: no-repeat;
     background-size: 60px 60px;
     background-position: center;
@@ -35,5 +65,66 @@
 
   &--fast-result::before {
     background-image: url("../../images/icons/stack.svg#clock");
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 280px;
+    gap: 32px;
+
+    &::before {
+      min-width: 80px;
+      min-height: 80px;
+      background-size: 80px 80px;
+    }
+
+    &::after {
+      content: "1";
+      font-family: $primary-font;
+      color: $basic_grey;
+      font-size: 280px;
+      line-height: 280px;
+      text-align: center;
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      left: 112px;
+    }
+
+    &--natural::before {
+      background-image: url("../../images/icons/stack.svg#leaf");
+    }
+
+    &--natural::after{
+      content: "1";
+    }
+
+    &--fast-food::before {
+      background-image: url("../../images/icons/stack.svg#chemicals");
+    }
+
+    &--fast-food::after{
+      content: "2";
+    }
+
+    &--nutritious::before {
+      background-image: url("../../images/icons/stack.svg#food-appliances");
+    }
+
+    &--nutritious::after {
+      content: "3";
+    }
+
+    &--fast-result::before {
+      background-image: url("../../images/icons/stack.svg#clock");
+    }
+
+    &--fast-result::after {
+      content: "4";
+    }
   }
 }
