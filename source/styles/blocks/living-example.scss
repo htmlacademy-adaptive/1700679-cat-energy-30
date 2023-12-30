@@ -1,12 +1,62 @@
+.living-example {
+  position: relative;
+  padding-top: 25px;
+  padding-bottom: 40px;
+  background-color: $basic_grey;
+}
+
 .living-example__title {
+  @include indent-reset;
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
+  padding-bottom: 40px;
 }
 
 .living-example__description {
+  @include indent-reset;
   font-family: $second-font;
   font-size: 14px;
   line-height: 18px;
   color: $special_dark-grey;
+  padding-bottom: 20px;
+}
+
+.living-example__benefits {
+  @include list-reset;
+  display: grid;
+  grid-template-columns: repeat(2, 124px);
+  gap: 32px;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 20px;
+}
+
+.living-example__benefit {
+  @include indent-reset;
+  padding: 14px 5px 0;
+  border: 1px solid $very_light-grey;
+  border-radius: 5px;
+}
+
+.living-example-benefit__title {
+  @include indent-reset;
+  text-align: center;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.living-example-benefit__caption {
+  @include indent-reset;
+  display: block;
+  background-color: $basic_grey;
+  text-align: center;
+  font-family: $second-font;
+  font-size: 12px;
+  line-height: 100%;
+  padding: 0 10px;
+  max-width: 77px;
+  margin: 0 auto;
+  transform: translateY(50%);
 }

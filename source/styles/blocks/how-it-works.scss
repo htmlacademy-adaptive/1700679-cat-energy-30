@@ -3,15 +3,18 @@
   display: flex;
   gap: 20px;
   flex-direction: column;
+  padding-bottom: 49px;
 
   @media (min-width: $tablet-width) and  (max-width: $desktop-width - 1){
     display: grid;
     grid-template-columns: repeat(2, 247px);
     gap: 37px 138px;
+    padding-bottom: 47px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
+    padding-bottom: 70px;
     gap: 80px;
   }
 }
