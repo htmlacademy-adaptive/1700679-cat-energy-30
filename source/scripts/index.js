@@ -33,10 +33,6 @@ function loadImages() {
     const aspectRatio2 = image2.naturalWidth / image2.naturalHeight;
     setAspectRatio(2, aspectRatio2);
   };
-
-  if (image1.complete && image2.complete) {
-    checkAspectRatio();
-  }
 }
 
 const slider = document.querySelector('.slider__range');
@@ -46,21 +42,6 @@ function setAspectRatio(imageNumber, aspectRatio) {
   const aspectRatioString = aspectRatio.toString();
   document.querySelector('.slider__wrapper-img').style.setProperty('--aspect-ratio', aspectRatioString);
 }
-
-function checkAspectRatio() {
-  const image1 = document.querySelector('.slider__img--before');
-  const image2 = document.querySelector('.slider__img--after');
-
-  const aspectRatio1 = image1.naturalWidth / image1.naturalHeight;
-  const aspectRatio2 = image2.naturalWidth / image2.naturalHeight;
-
-  if (aspectRatio1 === aspectRatio2) {
-    document.querySelector('.showDiff').style.setProperty('visibility', 'visible');
-  } else {
-    document.querySelector('.showDiff').style.setProperty('visibility', 'hidden');
-  }
-}
-
 
 slider.addEventListener('input', (e) => {
   container.style.setProperty('--position', `${e.target.value }%`);
