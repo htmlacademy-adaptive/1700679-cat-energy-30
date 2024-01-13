@@ -17,6 +17,15 @@
   align-items: center;
   display: flex;
   gap: 65px;
+
+  @media (min-width: $tablet-width) {
+    gap: 93px;
+    justify-content: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+  }
 }
 
 

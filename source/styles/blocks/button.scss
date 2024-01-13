@@ -13,7 +13,7 @@
   transition: all .5s ease
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $mobile-width-only) {
   .button {
     width: 100%;
   }
@@ -38,6 +38,6 @@
   color: $special_dark-grey;
 
   &:hover {
-    background-color: $basic_dark-grey;
+    background-color: $white-smoke;
   }
 }

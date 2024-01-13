@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 56px;
+  gap: 55px;
   width: 100%;
   transition: all 0.6s ease;
 }
@@ -38,7 +38,7 @@
   }
 
   .logo {
-    gap: 13px;
+    gap: 12px;
     width: fit-content;
     justify-content: flex-start;
   }
@@ -56,8 +56,7 @@
   }
 
   .logo {
-    width: fit-content;
-    gap: 13px;
-    justify-content: flex-start;
+    gap: 14px;
+    justify-content: center;
   }
 }

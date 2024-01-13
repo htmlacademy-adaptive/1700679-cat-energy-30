@@ -1,9 +1,14 @@
 .html-academy__link {
+  display: flex;
+  min-width: 280px;
+  align-items: center;
+  justify-content: space-between;
   color: $special_dark-grey;
   font-family: $second-font;
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
+  max-height: 34px;
 
   &::after {
     width: 27px;
@@ -29,5 +34,12 @@
     }
     color: $special_dark-grey;
     opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-width: 150px;
+    max-width: 168px;
+    gap: 21px;
+    max-height: 27px;
   }
 }

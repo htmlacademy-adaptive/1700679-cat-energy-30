@@ -58,16 +58,6 @@
   &:active {
     opacity: 0.3;
   }
-
-  @media (min-width: $tablet-width) {
-    font-size: 18px;
-    line-height: 24px;
-  }
-
-  @media (min-width: $desktop-width) {
-    font-size: 20px;
-    color: $white;
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -90,13 +80,23 @@
     }
 
     .main-nav__link {
+      position: relative;
+      font-size: 18px;
+      line-height: 24px;
       min-height: 24px;
       padding-top: 14px;
       padding-bottom: 12px;
       border: none;
+      align-items: center;
 
-      &--current {
-        border-bottom: 2px solid $basic_green;
+      &--current::after {
+        content: "";
+        width: 100%;
+        position: absolute;
+        height: 2px;
+        left: 0;
+        bottom: 2px;
+        background-color: $basic_green;
       }
     }
 }
@@ -107,10 +107,12 @@
   }
 
   .main-nav__link {
-    min-height: 0;
-    padding: 0 0 8px 0;
-    &--current {
-      border-bottom: 2px solid $white;
+    min-height: 52px;
+    font-size: 20px;
+    color: $white;
+    padding: 0;
+    &--current::after {
+      background-color: $white;
     }
   }
 }

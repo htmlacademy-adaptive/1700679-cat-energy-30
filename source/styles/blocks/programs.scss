@@ -1,12 +1,26 @@
 .programs {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 82px;
+    padding-bottom: 73px;
+  }
 }
 
 .programs__list {
   @include list-reset;
   display: grid;
   gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    gap: 30px;
+  }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 570px 570px;
@@ -24,38 +38,40 @@
   &--cat-slim {
     background-image: url("../../images/icons/stack.svg#cat-slim-mobile");
     background-size: 50px 53px;
-    background-position: 24px 20px;
+    background-position: 20px 21px;
   }
 
   &--cat-strong {
     background-image: url("../../images/icons/stack.svg#cat-pro-mobile");
     background-size: 67px 50px;
-    background-position: 13px 21px;
+    background-position: 13px 25px;
   }
 
   @media (min-width: $tablet-width) {
     padding: 77px 316px 57px 52px;
+    min-height: 372px;
 
     &--cat-slim {
       background-image: url("../../images/icons/stack.svg#cat-slim-tablet");
       background-size: 200px 211px;
-      background-position: 445px 95px;
+      background-position: 444px 81px;
     }
 
     &--cat-strong {
       background-image: url("../../images/icons/stack.svg#cat-pro-tablet");
       background-size: 268px 200px;
-      background-position: 411px 91px;
+      background-position: 410px 91px;
     }
   }
 
   @media (min-width: $desktop-width) {
-    padding: 77px 61px 55px 52px;
+    padding: 77px 62px 58px 52px;
+    max-height: 373px;
 
     &--cat-slim {
       background-image: url("../../images/icons/stack.svg#cat-slim-desktop");
-      background-size: 100px 100px;
-      background-position: 52px 47px;
+      background-size: 100px 109px;
+      background-position: 52px 40px;
     }
 
     &--cat-strong {
@@ -69,8 +85,8 @@
 .programs-item__title {
   @include indent-reset;
   box-sizing: border-box;
-  padding-left: 90px;
-  padding-bottom: 29px;
+  padding-left: 70px;
+  padding-bottom: 30px;
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
@@ -97,7 +113,7 @@
   line-height: 18px;
   color: $special_dark-grey;
   @include indent-reset;
-  padding-bottom: 23px;
+  padding-bottom: 22px;
   position: relative;
 
   &::after {
@@ -116,20 +132,22 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    padding-bottom: 48px;
+    padding-bottom: 59px;
+    color: $black;
+
     &::after {
       content: none;
     }
   }
 
-  @media (min-width: $tablet-width) {
-    padding-bottom: 23px;
+  @media (min-width: $desktop-width) {
+    padding-bottom: 34px;
   }
 }
 
 .programs-item__link {
   display: block;
-  margin-top: 15px;
+  margin-top: 20px;
   max-width: 194px;
   font-family: $primary-font;
   color: $black;
@@ -148,20 +166,36 @@
   display: flex;
   align-items: center;
   gap: 15px;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 1px;
+  }
 }
 
 .programs-item__link:hover .programs-item__arrow::after {
-  background-position: right center;
+  background-position: right 9px center;
+
+  @media (min-width: $tablet-width) {
+    background-size: 32px 10px;
+    background-position: right -1px center;
+  }
 }
 
 .programs-item__arrow::after {
   content: "";
   display: block;
-  width: 24px;
+  width: 40px;
   height: 12px;
   background-image: url("../../images/icons/stack.svg#arrow");
-  background-size: 24px 10px;
+  background-size: 36px 11px;
   background-repeat: no-repeat;
-  background-position: right 8px center;
+  background-position: right 12px center;
   transition: 0.3ms;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 12px;
+    background-size: 24px 10px;
+    background-position: right 7px center;
+  }
 }
