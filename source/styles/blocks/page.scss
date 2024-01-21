@@ -1,12 +1,9 @@
 .page {
-  height: 100%;
-  font-size: 18px;
-  font-family: $primary-font;
-  line-height: 27px;
+  height: 100vh;
+}
 
-  .page__body {
-    min-height: 100%;
-    margin: 0;
-    color: $black;
-  }
+.page__body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }

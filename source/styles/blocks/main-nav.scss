@@ -1,8 +1,24 @@
 .main-nav {
-  color: $black;
   align-items: center;
   flex-wrap: wrap;
-  transition: all 0.6s ease;
+
+  .main-nav__link {
+    color: $black;
+
+    @media (min-width: $desktop-width) {
+      color: $white;
+    }
+  }
+
+  &--secondary {
+    .main-nav__link {
+      color: $black;
+    }
+
+    .main-nav__link--current {
+      border-bottom: $basic_green 1px solid;
+    }
+  }
 
   &--closed .main-nav__list {
     display: none;
@@ -45,7 +61,6 @@
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
-  color: $black;
   text-decoration: none;
   border-top: 1px $whisper solid;
   min-width: 100%;
@@ -109,8 +124,8 @@
   .main-nav__link {
     min-height: 52px;
     font-size: 20px;
-    color: $white;
     padding: 0;
+    color: inherit;
     &--current::after {
       background-color: $white;
     }

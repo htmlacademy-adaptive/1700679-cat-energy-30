@@ -24,6 +24,11 @@
   height: 18px;
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width: $desktop-width) {
+    width: 118px;
+    height: 21px;
+  }
 }
 
 @media (min-width: $tablet-width) {
