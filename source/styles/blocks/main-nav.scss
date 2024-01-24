@@ -15,8 +15,8 @@
       color: $black;
     }
 
-    .main-nav__link--current {
-      border-bottom: $basic_green 1px solid;
+    .main-nav__link--current::after {
+      background-color: $basic_green;
     }
   }
 
@@ -112,11 +112,19 @@
         left: 0;
         bottom: 2px;
         background-color: $basic_green;
+
+        @media (min-width: $desktop-width) {
+          bottom: -1px;
+        }
       }
     }
 }
 
 @media (min-width: $desktop-width) {
+  .main-nav__list {
+    gap:35px;
+  }
+
   .main-nav__item {
     min-height: 59px;
   }
