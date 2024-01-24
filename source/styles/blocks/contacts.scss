@@ -2,6 +2,7 @@
   position: relative;
   max-width: 1440px;
   margin: 0 auto;
+  background-color: $white;
 }
 
 .contacts__wrapper {
@@ -68,9 +69,16 @@
   z-index: 1;
   top: 0;
   left: 0;
+  height: 362px;
+  width: 320px;
 
   @media (min-width: $tablet-width) {
     height: 400px;
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
   }
 }
 

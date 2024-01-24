@@ -5,7 +5,7 @@
   flex-direction: column;
   padding-bottom: 49px;
 
-  @media (min-width: $tablet-width) and  (max-width: $desktop-width - 1){
+  @media (min-width: $tablet-width) and  (max-width: $desktop-width - 1) {
     display: grid;
     grid-template-columns: repeat(2, 246px);
     gap: 37px 138px;
@@ -14,7 +14,7 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 40px 80px;
     padding-bottom: 32px;
   }
@@ -52,14 +52,6 @@
     background-repeat: no-repeat;
     background-size: 60px 60px;
     background-position: center;
-
-    @media (min-width: $tablet-width) {
-      transform: translateX(-1px);
-    }
-
-    @media (min-width: $desktop-width) {
-      transform: translateX(0);
-    }
   }
 
   &--natural::before {
@@ -86,79 +78,84 @@
     align-items: flex-start;
     min-height: 280px;
     gap: 32px;
-
-    &::before {
-      min-width: 80px;
-      min-height: 80px;
-      background-size: 80px 80px;
-    }
-
-    &::after {
-      content: "1";
-      font-family: $primary-font;
-      color: $basic_grey;
-      font-size: 280px;
-      line-height: 280px;
-      text-align: center;
-      z-index: -1;
-      position: absolute;
-      top: -8px;
-      left: 112px;
-    }
-
-    &--natural::before {
-      background-image: url("../../images/icons/stack.svg#leaf-tablet");
-    }
-
-    &--fast-food::before {
-      background-image: url("../../images/icons/stack.svg#chemicals-tablet");
-    }
-
-    &--nutritious::before {
-      background-image: url("../../images/icons/stack.svg#food-appliances-tablet");
-    }
-
-    &--fast-result::before {
-      background-image: url("../../images/icons/stack.svg#clock-tablet");
-    }
-
-    &--natural::after{
-      content: "1";
-      left: 118px;
-    }
-
-    &--fast-food::after{
-      content: "2";
-    }
-
-    &--nutritious::after {
-      content: "3";
-    }
-
-    &--fast-result::after {
-      content: "4";
-    }
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 30px;
     gap: 33px;
+  }
+}
 
-    &--natural::before {
-      background-image: url("../../images/icons/stack.svg#leaf-desktop");
-    }
+@media (min-width: $tablet-width) {
+  .how-it-works__point::before {
+    min-width: 80px;
+    min-height: 80px;
+    background-size: 80px 80px;
+  }
 
-    &--fast-food::before {
-      background-image: url("../../images/icons/stack.svg#chemicals-desktop");
-    }
+  .how-it-works__point::after {
+    content: "1";
+    font-family: $primary-font;
+    color: $basic_grey;
+    font-size: 280px;
+    line-height: 280px;
+    text-align: center;
+    z-index: -1;
+    position: absolute;
+    top: -8px;
+    left: 112px;
+  }
 
-    &--nutritious::before {
-      background-image: url("../../images/icons/stack.svg#food-appliances-desktop");
-    }
+  .how-it-works__point--natural::before {
+    background-image: url("../../images/icons/stack.svg#leaf-tablet");
+  }
 
-    &--fast-result::before {
-      background-image: url("../../images/icons/stack.svg#clock-desktop");
-    }
+  .how-it-works__point--fast-food::before {
+    background-image: url("../../images/icons/stack.svg#chemicals-tablet");
+  }
+
+  .how-it-works__point--nutritious::before {
+    background-image: url("../../images/icons/stack.svg#food-appliances-tablet");
+  }
+
+  .how-it-works__point--fast-result::before {
+    background-image: url("../../images/icons/stack.svg#clock-tablet");
+  }
+
+  .how-it-works__point--natural::after {
+    content: "1";
+    left: 118px;
+  }
+
+  .how-it-works__point--fast-food::after {
+    content: "2";
+  }
+
+  .how-it-works__point--nutritious::after {
+    content: "3";
+  }
+
+  .how-it-works__point--fast-result::after {
+    content: "4";
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .how-it-works__point--natural::before {
+    background-image: url("../../images/icons/stack.svg#leaf-desktop");
+  }
+
+  .how-it-works__point--fast-food::before {
+    background-image: url("../../images/icons/stack.svg#chemicals-desktop");
+  }
+
+  .how-it-works__point--nutritious::before {
+    background-image: url("../../images/icons/stack.svg#food-appliances-desktop");
+  }
+
+  .how-it-works__point--fast-result::before {
+    background-image: url("../../images/icons/stack.svg#clock-desktop");
   }
 }
 

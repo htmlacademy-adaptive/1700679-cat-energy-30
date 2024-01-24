@@ -43,15 +43,6 @@
   @media (min-width: $tablet-width) {
     width: 560px;
     height: 512px;
-    &--before {
-      background-image: linear-gradient(to bottom, $white 151px, $whisper_dark 18.01%);
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &--before {
-      background-image: linear-gradient(to bottom, $white 136px, $basic_grey 18.01%);
-    }
   }
 
   &--before {
@@ -62,10 +53,19 @@
     inset: 0;
     width: var(--position);
     z-index: 1;
+  }
+}
 
-    @media (min-width: $desktop-width) {
-      background-color: $basic_grey;
-    }
+@media (min-width: $tablet-width) {
+  .slider__img--before {
+    background-image: linear-gradient(to bottom, $white 151px, $whisper_dark 18.01%);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider__img--before {
+    background-image: linear-gradient(to bottom, $white 136px, $basic_grey 18.01%);
+    background-color: $basic_grey;
   }
 }
 
@@ -73,14 +73,13 @@
   background-color: $basic_green;
 }
 
-.slider__range:hover ~  .slider__wrapper-thumb::before {
-    border-color: $basic_green;
+.slider__range:hover ~ .slider__wrapper-thumb::before {
+  border-color: $basic_green;
 }
 
 .slider__range:hover ~ .slider__wrapper-thumb::after {
-    background-color: $basic_green;
+  background-color: $basic_green;
 }
-
 
 .slider__range:active ~ .slider__wrapper-thumb {
   background-color: $basic_green;
@@ -88,11 +87,11 @@
 }
 
 .slider__range:active ~ .slider__wrapper-thumb::before {
-    border-color: $basic_green;
+  border-color: $basic_green;
 }
 
 .slider__range:active ~ .slider__wrapper-thumb::after {
-    background-color: $basic_green;
+  background-color: $basic_green;
 }
 
 
@@ -136,26 +135,21 @@
 
   &:hover {
     background-color: $basic_green;
-
-    &::before {
-      border-color: $basic_green;
-    }
-
-    &::after {
-      background-color: $basic_green;
-    }
   }
 
-  &:active {
+  &:hover::before {
+    border-color: $basic_green;
+  }
+
+  &:hover::after {
+    background-color: $basic_green;
+  }
+
+  &:active::before {
+    border-color: $basic_green;
+  }
+
+  &:active::after {
     background-color: $basic_dark-green;
-    opacity: 0.6;
-
-    &::before {
-      border-color: $basic_green;
-    }
-
-    &::after {
-      background-color: $basic_dark-green;
-    }
   }
 }

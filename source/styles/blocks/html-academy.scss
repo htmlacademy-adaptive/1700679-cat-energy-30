@@ -22,16 +22,10 @@
   }
 
   &:hover {
-    &::after {
-      background-color: $basic_green;
-    }
     color: $special_dark-grey;
   }
 
   &:active {
-    &::after {
-      background-color: $basic_green;
-    }
     color: $special_dark-grey;
     opacity: 0.3;
   }
@@ -42,4 +36,13 @@
     gap: 21px;
     max-height: 27px;
   }
+}
+
+
+.html-academy__link:hover::after {
+  background-color: $basic_green;
+}
+
+.html-academy__link:active::after {
+  background-color: $basic_green;
 }

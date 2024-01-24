@@ -1,25 +1,17 @@
 /* в этот файл добавляет скрипты*/
-function mobileBurger() {
-  const burger = document.querySelector('.burger');
-  const nav = document.querySelector('.main-nav');
-  const mainNavList = document.querySelector('.main-nav__list');
+const burger = document.querySelector('.main-header__burger');
+const mainNav = document.querySelector('.main-header__main-nav');
 
-
-  if (nav.classList.contains('main-nav--nojs')) {
-    nav.classList.remove('main-nav--nojs');
-  }
-
-  burger.addEventListener('click', function() {
-    if (this.classList.contains('burger--active')) {
-      this.classList.remove('burger--active');
-      nav.classList.add('main-nav--closed');
-    } else {
-      this.classList.add('burger--active');
-      nav.classList.remove('main-nav--closed');
-      mainNavList.classList.add('main-nav-list--opened');
-    }
-  });
+if (mainNav.classList.contains('main-header__main-nav--nojs')) {
+  mainNav.classList.remove('main-header__main-nav--nojs');
 }
 
-mobileBurger();
-
+burger.addEventListener('click', function() {
+  if (this.classList.contains('main-header__burger--active')) {
+    this.classList.remove('main-header__burger--active');
+    mainNav.classList.remove('main-header__main-nav--opened');
+  } else {
+    this.classList.add('main-header__burger--active');
+    mainNav.classList.add('main-header__main-nav--opened');
+  }
+});

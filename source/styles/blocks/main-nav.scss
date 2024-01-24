@@ -1,35 +1,6 @@
 .main-nav {
   align-items: center;
   flex-wrap: wrap;
-
-  .main-nav__link {
-    color: $black;
-
-    @media (min-width: $desktop-width) {
-      color: $white;
-    }
-  }
-
-  &--secondary {
-    .main-nav__link {
-      color: $black;
-    }
-
-    .main-nav__link--current::after {
-      background-color: $basic_green;
-    }
-  }
-
-  &--closed .main-nav__list {
-    display: none;
-    animation: moveElement  0.6s ease;
-  }
-
-  &--nojs .main-nav__list{
-    display: block;
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 .main-nav__list {
@@ -41,9 +12,8 @@
   position: absolute;
   top: 65px;
   left: 0;
-  background-color: #fff;
+  background-color: $white;
   z-index: 1;
-  animation: moveElement  0.6s ease;
 }
 
 .main-nav__item {
@@ -65,6 +35,7 @@
   border-top: 1px $whisper solid;
   min-width: 100%;
   justify-content: center;
+  color: $black;
 
   &:hover {
     opacity: 0.6;
@@ -76,53 +47,44 @@
 }
 
 @media (min-width: $tablet-width) {
-    .main-nav--closed {
-      .main-nav__list {
-        display: flex;
-      }
+  .main-nav__list {
+    position: relative;
+    gap: 33px;
+    flex-direction: row;
+    top: 0;
+    background: none;
+  }
+
+  .main-nav__item {
+    min-width: 0;
+  }
+
+  .main-nav__link {
+    position: relative;
+    font-size: 18px;
+    line-height: 24px;
+    min-height: 24px;
+    padding-top: 14px;
+    padding-bottom: 12px;
+    border: none;
+    align-items: center;
+    color: $black;
+
+    &--current::after {
+      content: "";
+      width: 100%;
+      position: absolute;
+      height: 2px;
+      left: 0;
+      bottom: 2px;
+      background-color: $basic_green;
     }
-
-    .main-nav__list {
-      position: relative;
-      gap: 33px;
-      flex-direction: row;
-      top: 0;
-      background: none;
-    }
-
-    .main-nav__item {
-      min-width: 0;
-    }
-
-    .main-nav__link {
-      position: relative;
-      font-size: 18px;
-      line-height: 24px;
-      min-height: 24px;
-      padding-top: 14px;
-      padding-bottom: 12px;
-      border: none;
-      align-items: center;
-
-      &--current::after {
-        content: "";
-        width: 100%;
-        position: absolute;
-        height: 2px;
-        left: 0;
-        bottom: 2px;
-        background-color: $basic_green;
-
-        @media (min-width: $desktop-width) {
-          bottom: -1px;
-        }
-      }
-    }
+  }
 }
 
 @media (min-width: $desktop-width) {
   .main-nav__list {
-    gap:35px;
+    gap: 35px;
   }
 
   .main-nav__item {
@@ -133,9 +95,11 @@
     min-height: 52px;
     font-size: 20px;
     padding: 0;
-    color: inherit;
-    &--current::after {
-      background-color: $white;
-    }
+    color: $white;
+  }
+
+  .main-nav__link--current::after {
+    background-color: $white;
+    bottom: -1px;
   }
 }

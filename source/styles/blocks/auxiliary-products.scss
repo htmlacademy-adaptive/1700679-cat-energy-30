@@ -17,7 +17,7 @@
 @media (min-width: $desktop-width) {
   .auxiliary-products__wrapper {
     display: grid;
-    grid-template-columns:894px 245px;
+    grid-template-columns: 894px 245px;
     gap: 81px;
   }
 }
@@ -174,8 +174,7 @@
   line-height: 20px;
   font-weight: 400;
   text-align: center;
-  background-image: image-set("../../images/auxiliary-products/sale-mobile@1x.jpg" 1x,
-    "../../images/auxiliary-products/sale-mobile@1x.jpg" 2x);
+  background-image: image-set(url("../../images/auxiliary-products/sale-mobile@1x.webp") 1x, url("../../images/auxiliary-products/sale-mobile@2x.webp") 2x, url("../../images/auxiliary-products/sale-mobile@1x.jpg") 1x, url("../../images/auxiliary-products/sale-mobile@2x.jpg") 2x);
   background-repeat: no-repeat;
   background-position: center;
   background-color: $background_green;
@@ -197,30 +196,32 @@
     padding: 70px 20px 70px 420px;
     min-height: 200px;
     text-align: left;
-    background-image: image-set("../../images/auxiliary-products/sale-tablet@1x.jpg" 1x,
-      "../../images/auxiliary-products/sale-tablet@1x.jpg" 2x);
-
-    &::before {
-      background-image: url("../../images/icons/stack.svg#gift-tablet");
-      width: 80px;
-      height: 83px;
-      top: 57px;
-      left: 77px;
-      transform: none;
-    }
+    background-image: image-set(url("../../images/auxiliary-products/sale-tablet@1x.webp") 1x, url("../../images/auxiliary-products/sale-tablet@2x.webp") 2x, url("../../images/auxiliary-products/sale-tablet@1x.jpg") 1x, url("../../images/auxiliary-products/sale-tablet@2x.jpg") 2x);
   }
 
   @media (min-width: $desktop-width) {
     text-align: center;
     padding: 185px 0 0;
     margin-top: 52px;
-    background-image: image-set("../../images/auxiliary-products/sale-desktop@1x.jpg" 1x,
-      "../../images/auxiliary-products/sale-desktop@1x.jpg" 2x);
+    background-image: image-set(url("../../images/auxiliary-products/sale-desktop@1x.webp") 1x, url("../../images/auxiliary-products/sale-desktop@2x.webp") 2x, url("../../images/auxiliary-products/sale-mobile@1x.jpg") 1x, url("../../images/auxiliary-products/sale-desktop@2x.jpg") 2x);
+  }
+}
 
-    &::before {
-      top: 56px;
-      left: 84px;
-    }
+@media (min-width: $tablet-width) {
+  .auxiliary-products__sale::before {
+    background-image: url("../../images/icons/stack.svg#gift-tablet");
+    width: 80px;
+    height: 83px;
+    top: 57px;
+    left: 77px;
+    transform: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .auxiliary-products__sale::before {
+    top: 56px;
+    left: 84px;
   }
 }
 

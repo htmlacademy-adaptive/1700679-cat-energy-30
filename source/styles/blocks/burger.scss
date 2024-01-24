@@ -39,26 +39,3 @@
 .burger__line::after {
   top: 8px;
 }
-
-.burger--active {
-  .burger__line {
-    background-color: transparent;
-    transition: 0.1s;
-  }
-
-  .burger__line::before {
-    top: 0;
-    transform: rotate(45deg);
-  }
-
-  .burger__line::after {
-    top: 0;
-    transform: rotate(135deg);
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .main-nav__burger {
-    display: none;
-  }
-}
