@@ -1,6 +1,7 @@
 .how-it-works__points {
   @include list-reset;
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
   flex-direction: column;
   padding-bottom: 49px;
@@ -41,6 +42,7 @@
   font-size: 14px;
   line-height: 18px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 20px;
 

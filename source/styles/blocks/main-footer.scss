@@ -5,12 +5,12 @@
 
 .main-footer__container {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   gap: 19px;
   padding-bottom: 40px;
   padding-top: 40px;
   align-items: center;
-  flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;

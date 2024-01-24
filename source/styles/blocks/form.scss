@@ -132,6 +132,7 @@
 .form__list {
   @include list-reset;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   gap: 14px;
   max-width: 280px;
@@ -175,6 +176,7 @@
 .form__item {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 13px;
 
@@ -218,6 +220,7 @@
   appearance: textfield;
   padding: 19px 15px 13px;
   flex-shrink: 1;
+  flex-wrap: wrap;
   min-width: 100px;
   border: 1px solid $white-grey;
   max-height: 45px;
@@ -257,6 +260,7 @@
   position: relative;
   flex-grow: 1;
   flex-shrink: 2;
+  flex-wrap: wrap;
   display: flex;
 
   &::after {
@@ -457,6 +461,7 @@
 .form__send {
   margin-top: 10px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   gap: 21px;
 

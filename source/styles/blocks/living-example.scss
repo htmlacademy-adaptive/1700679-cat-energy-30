@@ -172,6 +172,7 @@
 .living-example__cost {
   @media (min-width: $desktop-width) {
     display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -192,6 +193,7 @@
 .living-example__wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     padding-bottom: 103px;
