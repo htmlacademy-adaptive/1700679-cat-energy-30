@@ -9,7 +9,6 @@
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
-  max-height: 34px;
 
   &::after {
     width: 27px;
@@ -35,10 +34,12 @@
     min-width: 150px;
     max-width: 168px;
     gap: 21px;
-    max-height: 27px;
   }
 }
 
+.html-academy__title {
+  @include indent-reset;
+}
 
 .html-academy__link:hover::after {
   background-color: $basic_green;

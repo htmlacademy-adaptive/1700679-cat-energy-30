@@ -1,6 +1,12 @@
 .main-nav {
   align-items: center;
   flex-wrap: wrap;
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    min-width: 500px;
+    min-height: 52px;
+  }
 }
 
 .main-nav__list {
@@ -10,11 +16,7 @@
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  position: absolute;
-  top: 65px;
-  left: 0;
   background-color: $white;
-  z-index: 1;
 }
 
 .main-nav__item {
@@ -50,6 +52,7 @@
 
 @media (min-width: $tablet-width) {
   .main-nav__list {
+    max-width: 437px;
     position: relative;
     gap: 33px;
     flex-direction: row;
@@ -78,7 +81,7 @@
       position: absolute;
       height: 2px;
       left: 0;
-      bottom: 2px;
+      bottom: 4px;
       background-color: $basic_green;
     }
   }
@@ -86,7 +89,13 @@
 
 @media (min-width: $desktop-width) {
   .main-nav__list {
-    gap: 35px;
+    flex-wrap: wrap;
+    gap: 33px;
+    max-width: 550px;
+    position: absolute;
+    justify-content: flex-end;
+    top: -2px;
+    right: 2px;
   }
 
   .main-nav__item {
@@ -102,6 +111,6 @@
 
   .main-nav__link--current::after {
     background-color: $white;
-    bottom: -1px;
+    bottom: 3px;
   }
 }

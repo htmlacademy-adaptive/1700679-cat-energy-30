@@ -51,6 +51,8 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 180px 1fr 44px;
+    border-left: 1px solid $very_light-grey;
+    border-right: 1px solid $very_light-grey;
     grid-column-gap: 50px;
     grid-row-gap: 22px;
     padding: 26px 37px 27px;
@@ -68,6 +70,8 @@
     padding: 15px 0 16px;
     max-width: 894px;
     gap: 0;
+    border-left: none;
+    border-right: none;
   }
 }
 

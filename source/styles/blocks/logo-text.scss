@@ -1,7 +1,8 @@
 .logo-text {
-  display: block;
+  display: flex;
   width: 128px;
   height: 24px;
+  flex-wrap: wrap;
   mask-size: 128px 24px;
   mask-position: center;
   mask-repeat: no-repeat;

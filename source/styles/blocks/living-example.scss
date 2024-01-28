@@ -40,8 +40,8 @@
   @media (min-width: $desktop-width) {
     display: grid;
     align-items: center;
-    grid-template-columns: 436px 580px;
-    gap: 213px;
+    grid-template-columns: 433px 580px;
+    gap: 217px;
   }
 }
 
@@ -184,7 +184,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 64px;
+    padding-left: 67px;
     padding-top: 0;
     margin-top: 0;
   }

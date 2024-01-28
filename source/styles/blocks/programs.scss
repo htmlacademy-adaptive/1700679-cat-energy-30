@@ -9,7 +9,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 82px;
-    padding-bottom: 73px;
+    padding-bottom: 71px;
   }
 }
 
@@ -52,8 +52,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 77px 62px 58px 52px;
-    max-height: 373px;
+    padding: 77px 27px 40px 52px;
+    min-height: 374px;
   }
 }
 
@@ -167,41 +167,30 @@
   }
 }
 
-.programs__item-arrow {
+.programs__item-link {
+  transition: all 0.5s ease;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 15px;
+  gap: 25px;
 
   @media (min-width: $desktop-width) {
     padding-left: 1px;
   }
 }
 
-.programs__item-link:hover .programs__item-arrow::after {
-  background-position: right 9px center;
-
-  @media (min-width: $tablet-width) {
-    background-size: 32px 10px;
-    background-position: right -1px center;
-  }
-}
-
-.programs__item-arrow::after {
+.programs__item-link::after {
   content: "";
   display: block;
-  width: 40px;
+  width: 32px;
   height: 12px;
   background-image: url("../../images/icons/stack.svg#arrow");
-  background-size: 36px 11px;
+  background-size: 32px 12px;
   background-repeat: no-repeat;
-  background-position: right 12px center;
-  transition: 0.3ms;
+  background-position: right 8px center;
+}
 
-  @media (min-width: $tablet-width) {
-    width: 40px;
-    height: 12px;
-    background-size: 24px 10px;
-    background-position: right 7px center;
-  }
+.programs__item-link:hover::after,
+.programs__item-link:focus::after {
+  background-position: right center;
 }

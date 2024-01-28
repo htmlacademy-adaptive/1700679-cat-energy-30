@@ -3,8 +3,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 55px;
-  width: 100%;
 }
 
 .logo__image {
@@ -15,18 +13,16 @@
 
 .logo__text {
   display: block;
-}
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 
-.logo__picture-wrapper {
-  display: flex;
-  width: 101px;
-  height: 18px;
-  margin-left: auto;
-  margin-right: auto;
-
-  @media (min-width: $desktop-width) {
-    width: 118px;
-    height: 21px;
+  @media (min-width: $tablet-width) {
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: translate(0);
   }
 }
 
@@ -38,7 +34,7 @@
 
   .logo__text {
     width: 101px;
-    height: 18px;
+    height: 19px;
   }
 
   .logo {
