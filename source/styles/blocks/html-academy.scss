@@ -35,6 +35,11 @@
     max-width: 168px;
     gap: 21px;
   }
+
+  &--disabled {
+    pointer-events: none;
+    opacity: 0.5;
+  }
 }
 
 .html-academy__title {

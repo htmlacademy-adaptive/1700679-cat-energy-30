@@ -151,7 +151,6 @@
 }
 
 .programs__item-link {
-  display: block;
   margin-top: 20px;
   max-width: 194px;
   font-family: $primary-font;
@@ -160,19 +159,16 @@
   line-height: 16px;
   text-transform: uppercase;
   text-decoration: none;
-
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    margin-top: 0;
-  }
-}
-
-.programs__item-link {
   transition: all 0.5s ease;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    margin-top: 0;
+  }
 
   @media (min-width: $desktop-width) {
     padding-left: 1px;
