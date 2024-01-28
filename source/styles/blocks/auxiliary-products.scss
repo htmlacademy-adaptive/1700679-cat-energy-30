@@ -18,7 +18,7 @@
   .auxiliary-products__wrapper {
     display: grid;
     grid-template-columns: 894px 245px;
-    gap: 81px;
+    gap: 82px;
   }
 }
 
@@ -66,8 +66,8 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 326px 241px 46px 244px;
-    padding: 15px 0 16px;
+    grid-template-columns: 326px 243px 44px 244px;
+    padding: 16px 0 15px;
     max-width: 894px;
     gap: 0;
     border-left: none;
@@ -161,7 +161,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    text-align: center;
+    text-align: left;
   }
 }
 
@@ -207,7 +207,7 @@
   @media (min-width: $desktop-width) {
     text-align: center;
     padding: 185px 0 0;
-    margin-top: 52px;
+    margin-top: 51px;
     background-image: image-set(url("../../images/auxiliary-products/sale-desktop@1x.webp") 1x, url("../../images/auxiliary-products/sale-desktop@2x.webp") 2x, url("../../images/auxiliary-products/sale-mobile@1x.jpg") 1x, url("../../images/auxiliary-products/sale-desktop@2x.jpg") 2x);
   }
 }
