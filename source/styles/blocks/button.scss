@@ -8,6 +8,14 @@
   line-height: 20px;
   text-align: center;
   cursor: pointer;
+  border: none;
+  padding: 10px 20px;
+}
+
+@media (max-width: $mobile-width-only) {
+  .button {
+    width: 100%;
+  }
 }
 
 .button--primary {
@@ -29,6 +37,6 @@
   color: $special_dark-grey;
 
   &:hover {
-    background-color: $basic_dark-grey;
+    background-color: $white-smoke;
   }
 }

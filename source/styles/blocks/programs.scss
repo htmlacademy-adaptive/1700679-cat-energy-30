@@ -1,0 +1,196 @@
+.programs {
+  padding-top: 20px;
+  padding-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 82px;
+    padding-bottom: 71px;
+  }
+}
+
+.programs__list {
+  @include list-reset;
+  display: grid;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 570px 570px;
+    gap: 20px 80px;
+  }
+}
+
+.programs__item {
+  background-color: $basic_grey;
+  background-repeat: no-repeat;
+  background-position: left;
+  padding: 30px 20px 20px;
+
+  &--cat-slim {
+    background-image: url("../../images/icons/stack.svg#cat-slim-mobile");
+    background-size: 50px 53px;
+    background-position: 20px 21px;
+  }
+
+  &--cat-strong {
+    background-image: url("../../images/icons/stack.svg#cat-pro-mobile");
+    background-size: 67px 50px;
+    background-position: 13px 25px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 316px 57px 52px;
+    min-height: 372px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 77px 27px 40px 52px;
+    min-height: 374px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .programs__item--cat-slim {
+    background-image: url("../../images/icons/stack.svg#cat-slim-tablet");
+    background-size: 200px 211px;
+    background-position: 444px 81px;
+  }
+
+  .programs__item--cat-strong {
+    background-image: url("../../images/icons/stack.svg#cat-pro-tablet");
+    background-size: 268px 200px;
+    background-position: 410px 91px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs__item--cat-slim {
+    background-image: url("../../images/icons/stack.svg#cat-slim-desktop");
+    background-size: 100px 109px;
+    background-position: 52px 40px;
+  }
+
+  .programs__item--cat-strong {
+    background-image: url("../../images/icons/stack.svg#cat-pro-desktop");
+    background-size: 134px 100px;
+    background-position: 33px 47px;
+  }
+}
+
+.programs__item-title {
+  @include indent-reset;
+  box-sizing: border-box;
+  padding-left: 70px;
+  padding-bottom: 30px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  max-width: 400px;
+  min-height: 53px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding-left: 0;
+    padding-bottom: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 162px;
+    padding-bottom: 73px;
+  }
+}
+
+.programs__item-description {
+  @include indent-reset;
+  font-family: $second-font;
+  font-size: 14px;
+  line-height: 18px;
+  color: $special_dark-grey;
+  padding-bottom: 22px;
+  position: relative;
+
+  &::after {
+    content: "";
+    height: 1px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 86%;
+    position: absolute;
+    background-color: $light-grey;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 59px;
+    color: $black;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 34px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .programs__item-description::after {
+    content: none;
+  }
+}
+
+.programs__item-link {
+  display: block;
+  margin-top: 20px;
+  max-width: 194px;
+  font-family: $primary-font;
+  color: $black;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    margin-top: 0;
+  }
+}
+
+.programs__item-link {
+  transition: all 0.5s ease;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 25px;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 1px;
+  }
+}
+
+.programs__item-link::after {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 12px;
+  background-image: url("../../images/icons/stack.svg#arrow");
+  background-size: 32px 12px;
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+}
+
+.programs__item-link:hover::after,
+.programs__item-link:focus::after {
+  background-position: right center;
+}
