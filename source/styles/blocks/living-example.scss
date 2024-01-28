@@ -140,8 +140,11 @@
     background-color: $white;
     font-size: 14px;
     line-height: 14px;
-    max-width: 125px;
     transform: translateY(80%);
+    white-space: nowrap;
+    max-width: none;
+    width: fit-content;
+    padding: 0 10px;
   }
 
   @media (min-width: $desktop-width) {
