@@ -40,4 +40,9 @@
     background-color: $basic_green;
     opacity: 0.3;
   }
+
+  &--disabled {
+    pointer-events: none;
+    opacity: 0.3;
+  }
 }

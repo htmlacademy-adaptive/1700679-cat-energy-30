@@ -30,13 +30,28 @@
     background-color: $basic_dark-green;
     color: rgba(225, 225, 225, 0.3);
   }
+
+  &:disabled,
+  &--disabled {
+    background-color: $basic_dark-green;
+    pointer-events: none;
+    color: rgba(225, 225, 225, 0.3);
+  }
 }
 
 .button--secondary {
   background-color: $basic_grey;
   color: $special_dark-grey;
 
-  &:hover {
+  &:hover,
+  &:active {
     background-color: $white-smoke;
+  }
+
+  &:disabled,
+  &--disabled {
+    background-color: $white-smoke;
+    color: $special_dark-grey;
+    pointer-events: none;
   }
 }
