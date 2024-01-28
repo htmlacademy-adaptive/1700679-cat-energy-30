@@ -186,6 +186,7 @@
   .product-card__show-button {
     margin-top: 19px;
     min-width: 280px;
+    width: fit-content;
 
     @media (min-width: $tablet-width) {
       margin: 0;

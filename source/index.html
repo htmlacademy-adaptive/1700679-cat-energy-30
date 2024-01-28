@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <title>Cat energy</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/index.js" defer></script>
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+    <link rel="icon" href="favicons/icon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="favicons/apple-icon.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preload" href="fonts/lato/lato-regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswald/oswald-regular.woff2" as="font" crossorigin="anonymous">
+    <script src="scripts/index.js" defer></script>
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -17,12 +21,12 @@
           <picture>
             <source media="(min-width: 1440px)" srcset="images/icons/logo-pic-desktop.svg" width="70" height="59" type="image/svg+xml">
             <source media="(min-width: 768px)" srcset="images/icons/logo-pic-tablet.svg" width="60" height="50" type="image/svg+xml">
-            <img class="logo__image" alt="Логотип" src="images/icons/logo-pic-mobile.svg" width="33" height="38">
+            <img class="logo__image" alt="Логотип" src="images/icons/logo-pic-mobile.svg" width="33" height="38" loading="eager">
           </picture>
           <picture>
             <source media="(min-width: 1440px)" srcset="images/icons/logo-text-desktop.svg" width="118" height="21" type="image/svg+xml">
             <source media="(min-width: 768px)" srcset="images/icons/logo-text-tablet.svg" width="101" height="19" type="image/svg+xml">
-            <img class="logo__text" alt="Кэт энерджи" src="images/icons/logo-text-mobile.svg" width="101" height="18">
+            <img class="logo__text" alt="Кэт энерджи" src="images/icons/logo-text-mobile.svg" width="101" height="18" loading="eager">
           </picture>
           <span class="visually-hidden">Cat energy</span>
         </a>
@@ -56,7 +60,7 @@
               <source srcset="images/promo/promo-can-tablet@1x.webp 1x, images/promo/promo-can-tablet@2x.webp 2x" media="(min-width: 768px)" type="image/webp" width="709" height="609">
               <source srcset="images/promo/promo-can-desktop@1x.png 1x, images/promo/promo-can-desktop@2x.png 2x" media="(min-width: 1440px)" type="image/png" width="552" height="499">
               <source srcset="images/promo/promo-can-tablet@1x.png 1x, images/promo/promo-can-tablet@2x.png 2x" media="(min-width: 768px)" type="image/png" width="709" height="609">
-              <img class="promo__image" src="images/promo/promo-can-mobile@1x.png" srcset="images/promo/promo-can-mobile@2x.png 2x" width="280" height="270" alt="Наш продукт вкусная курица">
+              <img class="promo__image" src="images/promo/promo-can-mobile@1x.png" srcset="images/promo/promo-can-mobile@2x.png 2x" width="280" height="270" alt="Наш продукт вкусная курица" loading="lazy">
             </picture>
           <a class="promo__find-program button button--primary" href="catalog.html">Подобрать программу</a>
         </div>
@@ -114,13 +118,13 @@
                       <source media="(max-width: 767px)" srcset="images/slider/cat-before-mobile@1x.webp 1x, images/slider/cat-before-mobile@2x.webp 2x" width="280" height="256" type="image/webp">
                       <source media="(min-width: 768px)" srcset="images/slider/cat-before-tablet@1x.webp 1x, images/slider/cat-before-tablet@2x.webp 2x" width="560" height="512" type="image/webp">
                       <source media="(min-width: 768px)" srcset="images/slider/cat-before-tablet@1x.png 1x, images/slider/cat-before-tablet@2x.png 2x" width="560" height="512" type="image/png">
-                      <img class="slider__img slider__img--before" src="images/slider/cat-before-mobile@1x.png" srcset="images/slider/cat-before-mobile@2x.png 2x" width="280" height="256" alt="То что было" >
+                      <img class="slider__img slider__img--before" src="images/slider/cat-before-mobile@1x.png" srcset="images/slider/cat-before-mobile@2x.png 2x" width="280" height="256" alt="То что было" loading="lazy">
                     </picture>
                     <picture>
                       <source media="(max-width: 767px)" srcset="images/slider/cat-after-mobile@1x.webp 1x, images/slider/cat-after-mobile@2x.webp 2x" width="280" height="256" type="image/webp">
                       <source media="(min-width: 768px)" srcset="images/slider/cat-after-tablet@1x.webp 1x, images/slider/cat-after-tablet@2x.webp 2x" width="560" height="512" type="image/webp">
                       <source media="(min-width: 768px)" srcset="images/slider/cat-after-tablet@1x.png 1x, images/slider/cat-after-tablet@2x.png 2x" width="560" height="512" type="image/png">
-                      <img class="slider__img slider__img--after" src="images/slider/cat-after-mobile@1x.png" srcset="images/slider/cat-after-mobile@2x.png 2x" width="280" height="256" alt="То что будет" >
+                      <img class="slider__img slider__img--after" src="images/slider/cat-after-mobile@1x.png" srcset="images/slider/cat-after-mobile@2x.png 2x" width="280" height="256" alt="То что будет" loading="lazy">
                     </picture>
                   </div>
                   <input class="slider__range" type="range" min="0" max="100" name="slider-range" id="slider-range">
@@ -129,6 +133,7 @@
                     <span class="visually-hidden">Ползунок прокрутки слайдера</span>
                   </button>
                 </div>
+                <script src="scripts/slider.js"></script>
               </div>
           </div>
         </article>
@@ -151,9 +156,9 @@
             <source media="(max-width: 767px)" srcset="images/map/map-mobile@1x.webp 1x, images/map/map-mobile@2x.webp 2x" width="320" height="362" type="image/webp">
             <source media="(min-width: 1440px)" srcset="images/map/map-desktop@1x.png 1x, images/map/map-desktop@2x.png 2x" width="1440" height="400" type="image/png">
             <source media="(min-width: 768px)" srcset="images/map/map-tablet@1x.png 1x, images/map/map-tablet@2x.png 2x"  width="768" height="400" type="image/png">
-            <img class="contacts__map-image" src="images/map/map-mobile@1x.png" srcset="images/map/map-mobile@2x.png 2x" width="320" height="362" alt="Наша геолокация">
+            <img class="contacts__map-image" src="images/map/map-mobile@1x.png" srcset="images/map/map-mobile@2x.png 2x" width="320" height="362" alt="Наша геолокация" loading="lazy">
           </picture>
-          <iframe class="contacts__map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" allowfullscreen title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"></iframe>
+          <iframe class="contacts__map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" allowfullscreen title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург" loading="lazy"></iframe>
         </div>
       </div>
       <div class="main-footer__container container">
@@ -188,6 +193,5 @@
         </div>
       </div>
     </footer>
-    <script src="scripts/slider.js"></script>
   </body>
 </html>
