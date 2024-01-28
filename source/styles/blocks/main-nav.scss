@@ -52,12 +52,16 @@
 
 @media (min-width: $tablet-width) {
   .main-nav__list {
-    max-width: 437px;
+    max-width: 444px;
     position: relative;
-    gap: 33px;
+    gap: 36px;
     flex-direction: row;
     top: 0;
     background: none;
+  }
+
+  .main-nav__list--form {
+    gap: 33px;
   }
 
   .main-nav__item {
