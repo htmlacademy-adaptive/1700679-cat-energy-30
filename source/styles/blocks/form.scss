@@ -309,6 +309,12 @@
       background-color: $basic_green;
     }
   }
+
+  &--error-icon {
+    &::after {
+      background-color: $basic_red;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -516,4 +522,8 @@
     grid-template-columns: repeat(2, 570px);
     gap: 80px;
   }
+}
+
+.form__input--error {
+  border: 2px solid $basic_red;
 }
