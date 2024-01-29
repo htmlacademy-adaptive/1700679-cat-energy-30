@@ -32,6 +32,10 @@
   transform: translateY(0);
 }
 
+.main-header__main-nav--nojs ~ .main-header__burger {
+  display: none;
+}
+
 .main-header__container {
   justify-content: space-between;
   align-items: center;

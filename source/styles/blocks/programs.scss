@@ -159,7 +159,6 @@
   line-height: 16px;
   text-transform: uppercase;
   text-decoration: none;
-  transition: all 0.5s ease;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -168,10 +167,15 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     margin-top: 0;
+    gap: 26px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 1px;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
